@@ -1,0 +1,120 @@
+/* General body style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header style */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+/* Navigation bar style */
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Main content area */
+.main-content {
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* Homepage specific styles */
+.homepage .main-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.homepage .section {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.homepage .section h2 {
+    color: #333;
+}
+
+.homepage .section p {
+    line-height: 1.6;
+}
+
+/* About page specific styles */
+.about-page .main-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-page .main-content h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-page .main-content p {
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Footer style */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .homepage .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homepage .section {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .about-page .main-content {
+        padding: 20px;
+    }
+
+    nav a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+}

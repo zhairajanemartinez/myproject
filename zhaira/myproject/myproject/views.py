@@ -5,3 +5,6 @@ def homepage(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def post_list(request):
+    return render(request, 'posts/post_list.html')  # Render the post list template

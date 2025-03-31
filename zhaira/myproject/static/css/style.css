@@ -45,3 +45,32 @@ h1,
 p {
     text-align: center;
 }
+
+/* Style for the main post list title */
+.post-list-title {
+    font-size: 2.5rem; /* Adjust the size as needed */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Style for each post title */
+.post-title {
+    font-size: 2rem; /* Adjust the size as needed */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Style for the post date */
+.post-date {
+    font-size: 1rem; /* Adjust the size as needed */
+    color: gray; /* Optional: Make the date text gray */
+    margin-bottom: 0.5rem;
+}
+
+/* Style for the post body */
+.post-body {
+    font-size: 1.2rem; /* Adjust the size as needed */
+    line-height: 1.6; /* Optional: Improve readability */
+    margin-bottom: 1.5rem;
+}

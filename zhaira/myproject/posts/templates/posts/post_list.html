@@ -7,12 +7,14 @@
 {% block content %}
     <section>
         <h1 class="post-list-title">Post List</h1> <!-- Title of the post list -->
-        {% for post in posts %}
-            <article class="post">
-                <h2 class="post-title">{{ post.title }}</h2> <!-- Title of each post -->
-                <p class="post-date">{{ post.date }}</p> <!-- Date of each post -->
-                <p class="post-body">{{ post.body }}</p> <!-- Body of each post -->
-            </article>
-        {% endfor %}
+        <div class="post-container"> <!-- Added container -->
+            {% for post in posts %}
+                <article class="post">
+                    <h2 class="post-title">{{ post.title }}</h2> <!-- Title of each post -->
+                    <p class="post-date">{{ post.date }}</p> <!-- Date of each post -->
+                    <p class="post-body">{{ post.body }}</p> <!-- Body of each post -->
+                </article>
+            {% endfor %}
+        </div>
     </section>
 {% endblock %}

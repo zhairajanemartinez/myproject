@@ -14,20 +14,24 @@ body {
 }
 
 nav {
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center the nav items horizontally */
-    align-items: center; /* Center the nav items vertically */
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: aquamarine;
-    color: white;
-    font-size: 2.5rem;
+    padding: 1rem;
 }
 
 nav a {
     text-decoration: none;
-    color: purple; /* Changed color to purple */
-    margin: 0 15px; /* Add horizontal spacing between links */
-    font-size: 1.5rem; /* Adjust font size for better readability */
+    color: black;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+nav a i {
+    margin-right: 8px; /* Add spacing between the icon and text */
 }
 
 nav a:hover {
@@ -54,23 +58,49 @@ p {
     margin-bottom: 1.5rem;
 }
 
+/* Container for the posts */
+.post-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange posts vertically */
+    gap: 1.5rem; /* Add spacing between posts */
+    width: 100%; /* Full width of the page */
+    max-width: 800px; /* Limit the maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 1rem; /* Add padding inside the container */
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Add a border to define the rectangle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Style for each post */
+.post {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange content vertically */
+    gap: 0.5rem; /* Add spacing between elements inside the post */
+    padding: 1rem;
+    border: 1px solid #ddd; /* Add a border around each post */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    background-color: #ffffff; /* White background for each post */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for each post */
+}
+
 /* Style for each post title */
 .post-title {
-    font-size: 2rem; /* Adjust the size as needed */
+    font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
 /* Style for the post date */
 .post-date {
-    font-size: 1rem; /* Adjust the size as needed */
-    color: gray; /* Optional: Make the date text gray */
+    font-size: 0.9rem;
+    color: gray;
     margin-bottom: 0.5rem;
 }
 
 /* Style for the post body */
 .post-body {
-    font-size: 1.2rem; /* Adjust the size as needed */
-    line-height: 1.6; /* Optional: Improve readability */
+    font-size: 1.2rem;
+    line-height: 1.6;
     margin-bottom: 1.5rem;
 }
